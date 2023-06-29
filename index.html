@@ -23,9 +23,6 @@
             scroll-behavior: smooth;
         }
 
-        main {
-            margin-top: 30px;
-        }
         section {
             margin-top: 50px;
             scroll-margin-top: 70px;
@@ -38,11 +35,12 @@
 <body>
     <!-- Début du Header -->
     <header class="w3-top w3-white">
-        <nav id="desktopNav" class="w3-bar w3-border-bottom">
+        <nav id="desktopNav" class="w3-bar w3-border-bottom w3-blue-gray">
             <a href="javascript:void(0)" onclick="toggleNavbar()" class="w3-button w3-bar-item w3-hide-medium w3-hide-large w3-right">
                 <i class="fa fa-bars"></i>
             </a>    
-            <a href="#home" class="w3-bar-item w3-button" onclick="hideNavbar()">Home</a>
+            <a href="#home" class="w3-bar-item w3-button" onclick="hideNavbar()">
+            <i class="fa fa-home"></i></a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
@@ -60,7 +58,9 @@
     <main class="w3-justify w3-container">
 
         <!-- Début section home -->
-        <section id="home"></section>
+        <section id="home">
+            <h1>Bienvenue chez moi</h1>
+        </section>
 
         <!-- Début section about -->
         <section id="about">
@@ -80,6 +80,7 @@
         <!-- Début section portfolio -->
         <section id="portfolio">
             <h2>Portfolio</h2>
+            <p>Voici une série de photographies de qualité prises par mes soins.</p>
             <div class="w3-padding w3-margin">
                 <div class="w3-row-padding">
                     <article class="w3-col m4 w3-center">
