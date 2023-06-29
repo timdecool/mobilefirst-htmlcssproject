@@ -19,23 +19,73 @@
     <link rel="stylesheet" href="assets/css/w3css.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <style>
+
         html {
             scroll-behavior: smooth;
         }
 
         section {
-            margin-top: 50px;
-            scroll-margin-top: 70px;
+            scroll-margin-top: 120px;
         }
 
+        #home {
+            margin-top: 50px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.479);
+    
+        }
 
+        #background {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            transition: 0.3s ease-in;
+        }
+
+        .fleur1 {
+            background-image: url('assets/img/art-fleur1.jpg');
+        }
+
+        .fleur2 {
+            background-image: url('assets/img/art-fleur2.jpg');
+        }
+
+        .fleur3 {
+            background-image: url('assets/img/art-fleur3.jpg');
+        }
+
+        .cafe {
+            background-image: url('assets/img/coffee.jpg');
+
+        }
+
+        h1, h2 {
+            font-weight: 500;
+            text-align: center;        
+        }
+
+        header {
+            background-color: #fcae89;
+        }
+
+        #btnToTop {
+            z-index: 5;
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            border: 1px solid black;
+            background-color: rgba(255, 255, 255, 0.616);
+            border-radius: 5px;
+            padding: 10px;
+        }       
     </style>
 </head>
 
 <body>
-    <!-- Début du Header -->
-    <header class="w3-top w3-white">
-        <nav id="desktopNav" class="w3-bar w3-border-bottom w3-blue-gray">
+    <div id="background" class="fleur1">
+        <!-- Début du Header -->
+    <header class="w3-top">
+        <nav id="desktopNav" class="w3-bar w3-border-bottom w3-border-black">
             <a href="javascript:void(0)" onclick="toggleNavbar()" class="w3-button w3-bar-item w3-hide-medium w3-hide-large w3-right">
                 <i class="fa fa-bars"></i>
             </a>    
@@ -57,20 +107,25 @@
     <!-- Début du main -->
     <main class="w3-justify w3-container">
 
+        <button id="btnToTop" class="w3-hide w3-animate-opacity">
+            <a href="#top"><i class="fa fa-arrow-up fa-2x"></i></a>    
+        </button>
+
         <!-- Début section home -->
-        <section id="home">
-            <h1>Bienvenue chez moi</h1>
+        <section id="home" class="w3-display-container w3-center w3-padding">
+            <h1 class="w3-display-middle w3-padding">WELCOME HOME</h1>
         </section>
 
         <!-- Début section about -->
-        <section id="about">
-            <h2>About</h2>
+        <h2 class="w3-padding">ABOUT ME</h2>
+
+        <section id="about" class="w3-display-container w3-center w3-padding">
             <div class="w3-row">
                 <div class="w3-half w3-padding">
-                    <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image">
+                    <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card">
                 </div>
-                <div class="w3-half">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid quae? Quisquam ad saepe iure laboriosam excepturi doloribus unde voluptates consequuntur quam! Corporis veritatis quo cum vero nobis blanditiis autem? Dicta ut iste sit ab, dignissimos non cupiditate repellendus soluta optio repellat libero consequatur, commodi, ipsum ex iure ratione sunt eum. Facilis eum praesentium numquam incidunt repudiandae ut deserunt quos ipsam dolores voluptas culpa mollitia labore similique perferendis corporis molestiae perspiciatis aut nemo, reprehenderit vero non debitis voluptatum corrupti at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta voluptas magni consequatur ducimus sit corrupti sapiente quis assumenda, possimus, soluta eum unde totam! Quod cum inventore omnis debitis ullam modi esse reiciendis delectus illum. Eos possimus quas nesciunt mollitia repellendus. Sequi, ipsam nihil officia accusamus tenetur nobis at ad sapiente nesciunt natus blanditiis porro molestias. Mollitia tempora rerum dolorem ad error? Facere sunt fugiat sapiente repellat unde modi itaque architecto, voluptatum, laborum quia pariatur porro culpa quisquam adipisci! Iste, quasi. Provident, similique nesciunt quia labore enim architecto error totam atque autem, voluptatem assumenda quam corporis? Nihil ullam necessitatibus unde aspernatur sed officiis dicta, molestias blanditiis magni officia. Maxime ut soluta libero non nemo cumque fuga! Iste, facere cum? Aliquid sit rem alias voluptate voluptas in obcaecati, explicabo nulla, sed numquam libero inventore aspernatur maxime odit assumenda recusandae iusto animi eius totam ratione aliquam qui.</p>
+                <div class="w3-half w3-card">
+                    <p class="w3-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid quae? Quisquam ad saepe iure laboriosam excepturi doloribus unde voluptates consequuntur quam! Corporis veritatis quo cum vero nobis blanditiis autem? Dicta ut iste sit ab, dignissimos non cupiditate repellendus soluta optio repellat libero consequatur, commodi, ipsum ex iure ratione sunt eum. Facilis eum praesentium numquam incidunt repudiandae ut deserunt quos ipsam dolores voluptas culpa mollitia labore similique perferendis corporis molestiae perspiciatis aut nemo, reprehenderit vero non debitis voluptatum corrupti at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta voluptas magni consequatur ducimus sit corrupti sapiente quis assumenda, possimus, soluta eum unde totam! Quod cum inventore omnis debitis ullam modi esse reiciendis delectus illum.</p>
                 </div>
 
             </div>
@@ -78,43 +133,43 @@
         </section>
 
         <!-- Début section portfolio -->
-        <section id="portfolio">
-            <h2>Portfolio</h2>
+        <h2 class="w3-padding">PORTFOLIO</h2>
+        <section id="portfolio" class="w3-display-container w3-center w3-padding">
             <p>Voici une série de photographies de qualité prises par mes soins.</p>
-            <div class="w3-padding w3-margin">
+            <div class="w3-padding w3-margin w3-white">
                 <div class="w3-row-padding">
                     <article class="w3-col m4 w3-center">
-                        <img src="assets/img/grasslands.webp" alt="Photo des grasslands" title="Magnifique paysage" class="w3-image w3-card w3-margin-bottom">              
+                        <img src="assets/img/photo1.jpg" alt="Photo des grasslands" title="Magnifique paysage" class="w3-image w3-card w3-margin-bottom w3-margin-top">              
                     </article>
                     <article class="w3-col m4">
-                        <img src="assets/img/surf.webp" alt="Photo de surf" title="Belle photo surfer" class="w3-image w3-card w3-margin-bottom">
+                        <img src="assets/img/photo2.jpg" alt="Photo de surf" title="Belle photo surfer" class="w3-image w3-card w3-margin-bottom w3-margin-top">
                     </article>
                     <article class="w3-col m4">
-                        <img src="assets/img/prairie.webp" alt="Photo de prairie" title="Magnifique prairie" class="w3-image w3-card w3-margin-bottom">
-                    </article>
-                </div>
-
-                <div class="w3-row-padding">
-                    <article class="w3-col m4">
-                        <img src="assets/img/goat.avif" alt="Photo de chèvre" title="Photo de chèvre" class="w3-image w3-card w3-margin-bottom">              
-                    </article>
-                    <article class="w3-col m4">
-                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
-                    </article>
-                    <article class="w3-col m4">
-                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
+                        <img src="assets/img/photo3.jpg" alt="Photo de prairie" title="Magnifique prairie" class="w3-image w3-card w3-margin-bottom w3-margin-top">
                     </article>
                 </div>
 
                 <div class="w3-row-padding">
                     <article class="w3-col m4">
-                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">              
+                        <img src="assets/img/photo4.jpg" alt="Photo de chèvre" title="Photo de chèvre" class="w3-image w3-card w3-margin-bottom">              
                     </article>
                     <article class="w3-col m4">
-                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
+                        <img src="assets/img/photo5.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
                     </article>
                     <article class="w3-col m4">
-                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
+                        <img src="assets/img/photo6.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
+                    </article>
+                </div>
+
+                <div class="w3-row-padding">
+                    <article class="w3-col m4">
+                        <img src="assets/img/photo7.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">              
+                    </article>
+                    <article class="w3-col m4">
+                        <img src="assets/img/photo8.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
+                    </article>
+                    <article class="w3-col m4">
+                        <img src="assets/img/photo9.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
                     </article>
                 </div>
             </div>
@@ -123,9 +178,35 @@
         </section>
 
         <!-- Début section Contact -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab eos porro quis minus consequatur ad nisi veniam dignissimos totam quidem neque eligendi voluptatem, soluta, repellendus reiciendis hic qui placeat repellat fugit tenetur modi. Ad sequi non alias ducimus consequuntur molestias esse delectus, illum fugiat ullam culpa doloribus magni exercitationem, ipsam nostrum laborum facere, deserunt dolore illo commodi iure nobis! Ullam soluta dolore consequatur possimus illo quae molestiae autem minus aspernatur similique. Earum, alias consequatur! Nulla optio omnis explicabo cum enim quasi facere rerum voluptates pariatur ut ipsam reiciendis sequi sit, fugit deserunt laborum ullam aperiam vero possimus adipisci eum quia voluptas iste. Quae sed consectetur officia. Doloribus harum at autem non quam necessitatibus, modi veritatis rerum ea quidem praesentium maiores totam atque reprehenderit dicta labore quasi maxime nemo mollitia. Dolor in voluptatum aliquid itaque iure quisquam, error esse aperiam neque, ipsa quaerat asperiores est provident quas. Necessitatibus, qui repellat?</p>
+        <h2 class="w3-padding">CONTACT ME</h2>
+        <section id="contact" class="w3-display-container w3-center w3-padding">
+            <p>Vous avez une question, un projet, une commande ? Discutons-en.</p>
+            <form class="w3-card w3-white w3-padding">
+                <div>
+                    <label for="surname">Votre nom</label>
+                    <input type="text" name="surname" id="surname">
+                </div>
+
+                <div>
+                    <label for="name">Votre prénom</label>
+                    <input type="text" name="name" id="name">
+                </div>
+
+                <div>
+                    <label for="email">Votre adresse mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="message">Votre message, en quelques phrases</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+
+                <div>
+                    <button class="w3-button">Envoyer</button>
+                </div>
+            </form>
+
         </section>
     </main>
     <!-- Fin du Main -->
@@ -135,7 +216,9 @@
         
     </footer>
     <!-- Fin du Footer -->
+    </div>
 
+    
     <script>
         // Fonction pour afficher et masquer la barre de menu
         function toggleNavbar() {
@@ -149,7 +232,35 @@
                 nav.classList.remove("w3-show");
             }
         }
+
+        function displayScrollToTopBtn(){
+            const btn = document.getElementById("btnToTop");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+                btn.classList.add("w3-show");
+            } else {
+                btn.classList.remove("w3-show");
+            }
+        }
+
+        window.addEventListener("scroll",function(){
+            displayScrollToTopBtn();
+        });
+
+        function changeBackground(){
+            const background = document.getElementById('background');
+            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700 ){
+                background.classList.add("fleur3");
+                console.log(body.classList);
+            } else {
+                background.classList.remove("fleur3");
+            }
+        } 
+
+        window.addEventListener("scroll", function(){
+            changeBackground();
+        });
     </script>
+    
 
 
 </body>
