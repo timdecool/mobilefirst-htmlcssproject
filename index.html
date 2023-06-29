@@ -24,10 +24,10 @@
         }
 
         main {
-            margin: 30px;
+            margin-top: 30px;
         }
         section {
-            margin-top: 70px;
+            margin-top: 50px;
             scroll-margin-top: 70px;
         }
 
@@ -36,12 +36,13 @@
 </head>
 
 <body>
-    <header class="w3-top w3-blue">
-        <nav id="desktopNav" class="w3-bar">
+    <!-- Début du Header -->
+    <header class="w3-top w3-white">
+        <nav id="desktopNav" class="w3-bar w3-border-bottom">
             <a href="javascript:void(0)" onclick="toggleNavbar()" class="w3-button w3-bar-item w3-hide-medium w3-hide-large w3-right">
                 <i class="fa fa-bars"></i>
             </a>    
-            <a href="#home" class="w3-bar-item w3-button">Home</a>
+            <a href="#home" class="w3-bar-item w3-button" onclick="hideNavbar()">Home</a>
             <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
             <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
             <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
@@ -53,31 +54,99 @@
             <a href="#contact"  class="w3-bar-item w3-button" onclick="toggleNavbar()">Contact</a>
         </nav>
     </header>
+    <!-- Fin du Header -->
 
-    <main class="w3-justify">
+    <!-- Début du main -->
+    <main class="w3-justify w3-container">
+
+        <!-- Début section home -->
         <section id="home"></section>
+
+        <!-- Début section about -->
         <section id="about">
             <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid quae? Quisquam ad saepe iure laboriosam excepturi doloribus unde voluptates consequuntur quam! Corporis veritatis quo cum vero nobis blanditiis autem? Dicta ut iste sit ab, dignissimos non cupiditate repellendus soluta optio repellat libero consequatur, commodi, ipsum ex iure ratione sunt eum. Facilis eum praesentium numquam incidunt repudiandae ut deserunt quos ipsam dolores voluptas culpa mollitia labore similique perferendis corporis molestiae perspiciatis aut nemo, reprehenderit vero non debitis voluptatum corrupti at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta voluptas magni consequatur ducimus sit corrupti sapiente quis assumenda, possimus, soluta eum unde totam! Quod cum inventore omnis debitis ullam modi esse reiciendis delectus illum. Eos possimus quas nesciunt mollitia repellendus. Sequi, ipsam nihil officia accusamus tenetur nobis at ad sapiente nesciunt natus blanditiis porro molestias. Mollitia tempora rerum dolorem ad error? Facere sunt fugiat sapiente repellat unde modi itaque architecto, voluptatum, laborum quia pariatur porro culpa quisquam adipisci! Iste, quasi. Provident, similique nesciunt quia labore enim architecto error totam atque autem, voluptatem assumenda quam corporis? Nihil ullam necessitatibus unde aspernatur sed officiis dicta, molestias blanditiis magni officia. Maxime ut soluta libero non nemo cumque fuga! Iste, facere cum? Aliquid sit rem alias voluptate voluptas in obcaecati, explicabo nulla, sed numquam libero inventore aspernatur maxime odit assumenda recusandae iusto animi eius totam ratione aliquam qui. Temporibus vel sed odio exercitationem iste soluta, laudantium, quo modi quae ratione dolor excepturi nam deleniti quod expedita laborum nisi, alias hic magnam perspiciatis. Laborum officiis aspernatur earum qui numquam voluptate quidem velit libero laudantium laboriosam eum, odio esse facilis debitis, blanditiis a. Soluta ea dolorum quia eligendi fugit molestias est quos mollitia nihil ratione ipsa, natus odio expedita quo iure officia recusandae omnis. Ea similique dolore eum aspernatur veritatis? Iste, est autem aut voluptatum repellendus eius eaque voluptates beatae rerum culpa suscipit, quae aliquam earum veniam nam animi perspiciatis non? Sapiente consectetur corrupti voluptatum laboriosam nesciunt blanditiis odio, assumenda deleniti magnam quasi reiciendis nemo beatae enim aut eum. Laudantium nobis est sint. Vero debitis vitae nemo aperiam, ab obcaecati repudiandae dolorem at dolores distinctio quo ipsam nulla culpa porro nisi laborum labore? Similique, fuga exercitationem qui non maiores eligendi totam ipsa nemo, odio enim laudantium officiis. Laboriosam iusto nesciunt quaerat cumque odio totam ad in aliquam iure, eligendi culpa nostrum fugit natus ullam temporibus cupiditate commodi delectus asperiores? Impedit ipsam aliquam sed voluptatum perferendis iusto fugit eaque numquam dicta molestias, exercitationem provident aut et, a amet? Ratione laborum culpa quis officia excepturi porro, aut possimus, impedit saepe iste beatae. Quia, corrupti voluptatum dolores distinctio quidem sapiente ut praesentium eius illo minima explicabo repellendus dolor ea? Error, doloremque quod. Dicta qui sint ipsam eaque pariatur at voluptatum error, quia vero repellendus itaque quasi totam minima numquam exercitationem distinctio illum dolore tenetur corrupti? Quaerat, incidunt! Adipisci voluptates nobis ex cupiditate facilis quas iste dolorem distinctio, unde quaerat odio? Vel, obcaecati possimus nam commodi temporibus, sequi est sunt, magni ab consequuntur quod dolorem accusamus. Molestiae ipsum nostrum a repudiandae sit, dolorem possimus optio. Repellat aut commodi distinctio ea eos delectus iusto maiores eveniet molestias iure deserunt dolorem consequuntur amet id, facere culpa quis nesciunt! Distinctio voluptatum, quia explicabo qui voluptatem harum labore quas perspiciatis error perferendis nisi fugiat porro est. Molestiae tempora accusantium pariatur aliquam optio ea exercitationem necessitatibus, dolores eaque totam! Officiis qui quod itaque aut distinctio doloribus voluptatibus esse provident laborum culpa deserunt iste odit perspiciatis quidem veritatis consectetur, nihil laboriosam placeat atque quam aperiam.</p>
+            <div class="w3-row">
+                <div class="w3-half w3-padding">
+                    <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image">
+                </div>
+                <div class="w3-half">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid quae? Quisquam ad saepe iure laboriosam excepturi doloribus unde voluptates consequuntur quam! Corporis veritatis quo cum vero nobis blanditiis autem? Dicta ut iste sit ab, dignissimos non cupiditate repellendus soluta optio repellat libero consequatur, commodi, ipsum ex iure ratione sunt eum. Facilis eum praesentium numquam incidunt repudiandae ut deserunt quos ipsam dolores voluptas culpa mollitia labore similique perferendis corporis molestiae perspiciatis aut nemo, reprehenderit vero non debitis voluptatum corrupti at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta voluptas magni consequatur ducimus sit corrupti sapiente quis assumenda, possimus, soluta eum unde totam! Quod cum inventore omnis debitis ullam modi esse reiciendis delectus illum. Eos possimus quas nesciunt mollitia repellendus. Sequi, ipsam nihil officia accusamus tenetur nobis at ad sapiente nesciunt natus blanditiis porro molestias. Mollitia tempora rerum dolorem ad error? Facere sunt fugiat sapiente repellat unde modi itaque architecto, voluptatum, laborum quia pariatur porro culpa quisquam adipisci! Iste, quasi. Provident, similique nesciunt quia labore enim architecto error totam atque autem, voluptatem assumenda quam corporis? Nihil ullam necessitatibus unde aspernatur sed officiis dicta, molestias blanditiis magni officia. Maxime ut soluta libero non nemo cumque fuga! Iste, facere cum? Aliquid sit rem alias voluptate voluptas in obcaecati, explicabo nulla, sed numquam libero inventore aspernatur maxime odit assumenda recusandae iusto animi eius totam ratione aliquam qui.</p>
+                </div>
+
+            </div>
+
         </section>
+
+        <!-- Début section portfolio -->
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dignissimos minus at harum sit autem officia! Obcaecati assumenda molestiae recusandae facilis! Dolorum iste nisi nobis illo veniam, labore facilis sed excepturi modi aperiam voluptatum iusto, quisquam expedita suscipit minus qui laboriosam molestiae exercitationem architecto voluptates. Voluptate optio delectus laboriosam possimus, ducimus deserunt ex architecto, illum, odio neque ullam expedita quas praesentium cupiditate. Unde soluta repellat tempora modi culpa in distinctio earum, suscipit optio tempore cumque consequatur, veniam laborum vitae accusamus sit impedit. Asperiores, velit mollitia ab nesciunt, aspernatur nihil excepturi perspiciatis dignissimos dolorem vitae porro laudantium, cumque officiis obcaecati! Provident odit, officiis harum delectus quod optio ducimus reiciendis nam nemo et. Porro alias obcaecati voluptate distinctio labore laborum eum! Voluptatibus saepe odio sed ducimus delectus beatae praesentium, impedit quisquam itaque mollitia porro maxime a hic fugiat ullam fugit iure culpa unde dignissimos quae deleniti exercitationem soluta! Officiis, animi est quos qui recusandae modi tempora eaque quidem vero natus provident sequi voluptatibus nam commodi, placeat quae quibusdam magnam. Alias, ipsa vel? Quia quas quos veniam doloribus, ab similique dolorum esse eius nostrum, iusto voluptas omnis, perferendis tempora nisi obcaecati fuga facilis ratione eaque nesciunt inventore ipsam consectetur! Ipsa hic enim quibusdam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam enim eos similique quaerat sunt assumenda asperiores perspiciatis, nesciunt molestiae rem magni esse nostrum eveniet adipisci vel itaque ducimus sed. Quasi error enim, neque incidunt impedit vero at eum veniam alias, vel eaque unde mollitia tempore, ipsum molestias accusamus debitis voluptates commodi quas id. Suscipit quis doloribus reiciendis reprehenderit accusamus, veritatis aut. Reiciendis officia odio qui, error dignissimos reprehenderit explicabo, dolores, officiis mollitia ab aliquid! Accusantium voluptate possimus dignissimos perspiciatis sequi tempora maxime placeat laboriosam nesciunt eum totam rem esse et fugiat, debitis odit amet ut error facilis, rerum minima delectus quo quisquam iure. Quod accusamus, facilis animi exercitationem aspernatur nemo nesciunt repudiandae rerum perferendis, officia sunt eos nostrum unde nobis necessitatibus quo laboriosam minima! Qui accusantium, minima dolor molestiae iure distinctio similique officiis adipisci exercitationem? Delectus a nisi impedit autem at architecto. Quia sint recusandae magnam optio, dicta mollitia sequi officiis vel expedita repellendus, quod provident repellat totam ex perferendis accusamus. Ducimus dolore rem doloribus eveniet necessitatibus maxime, amet neque sed iure nesciunt suscipit eum numquam quas repudiandae, atque optio debitis voluptatum doloremque corrupti beatae dicta odio modi? Facere veritatis eaque aperiam libero? Hic error aliquam, cumque tenetur voluptates porro sequi commodi distinctio maxime, necessitatibus quo cum fuga? Laborum praesentium repudiandae iusto reprehenderit eos necessitatibus cum deleniti est doloremque modi, ex hic quae odio enim nisi vero autem asperiores. Cum, perferendis officia itaque inventore excepturi sunt provident sit quaerat! Sed non cum ex inventore dolores possimus. Cupiditate deserunt possimus porro. Quas fugit odit nulla eaque recusandae eos, facilis illum. Numquam, cum maxime. Saepe vel cumque veniam est! Quae quam adipisci ratione, eos consequatur asperiores, ipsa pariatur illo dolorum dolores impedit veritatis assumenda ad facilis exercitationem natus laborum? Alias sequi quo odio eveniet beatae nulla dolores doloremque saepe expedita cupiditate.</p>
+            <div class="w3-padding w3-margin">
+                <div class="w3-row-padding">
+                    <article class="w3-col m4 w3-center">
+                        <img src="assets/img/grasslands.webp" alt="Photo des grasslands" title="Magnifique paysage" class="w3-image w3-card">              
+                    </article>
+                    <article class="w3-col m4">
+                        <img src="assets/img/surf.webp" alt="Photo de surf" title="Belle photo surfer" class="w3-image w3-card">
+                    </article>
+                    <article class="w3-col m4">
+                        <img src="assets/img/prairie.webp" alt="Photo de prairie" title="Magnifique prairie" class="w3-image w3-card">
+                    </article>
+                </div>
+
+                <div class="w3-row-padding">
+                    <article class="w3-col m4">
+                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card">              
+                    </article>
+                    <article class="w3-col m4">
+                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card">
+                    </article>
+                    <article class="w3-col m4">
+                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card">
+                    </article>
+                </div>
+
+                <div class="w3-row-padding">
+                    <article class="w3-col m4">
+                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card">              
+                    </article>
+                    <article class="w3-col m4">
+                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card">
+                    </article>
+                    <article class="w3-col m4">
+                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card">
+                    </article>
+                </div>
+            </div>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem dolores deserunt sed nemo velit repudiandae beatae aspernatur. Fugit eum architecto praesentium laborum omnis minus animi ab vel nisi adipisci?</p>
         </section>
+
+        <!-- Début section Contact -->
         <section id="contact">
             <h2>Contact</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ab eos porro quis minus consequatur ad nisi veniam dignissimos totam quidem neque eligendi voluptatem, soluta, repellendus reiciendis hic qui placeat repellat fugit tenetur modi. Ad sequi non alias ducimus consequuntur molestias esse delectus, illum fugiat ullam culpa doloribus magni exercitationem, ipsam nostrum laborum facere, deserunt dolore illo commodi iure nobis! Ullam soluta dolore consequatur possimus illo quae molestiae autem minus aspernatur similique. Earum, alias consequatur! Nulla optio omnis explicabo cum enim quasi facere rerum voluptates pariatur ut ipsam reiciendis sequi sit, fugit deserunt laborum ullam aperiam vero possimus adipisci eum quia voluptas iste. Quae sed consectetur officia. Doloribus harum at autem non quam necessitatibus, modi veritatis rerum ea quidem praesentium maiores totam atque reprehenderit dicta labore quasi maxime nemo mollitia. Dolor in voluptatum aliquid itaque iure quisquam, error esse aperiam neque, ipsa quaerat asperiores est provident quas. Necessitatibus, qui repellat?</p>
         </section>
     </main>
+    <!-- Fin du Main -->
 
+    <!-- Début du Footer -->
     <footer>
-
+        
     </footer>
+    <!-- Fin du Footer -->
 
     <script>
+        // Fonction pour afficher et masquer la barre de menu
         function toggleNavbar() {
             const nav = document.getElementById('mobileNav');
             nav.classList.toggle("w3-show");
+        }
+
+        function hideNavbar() {
+            const nav = document.getElementById('mobileNav');
+            if (nav.classList.contains("w3-show")) {
+                nav.classList.remove("w3-show");
+            }
         }
     </script>
 
