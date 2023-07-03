@@ -19,55 +19,97 @@
     <!-- Balise link pour relier aux fichiers CSS w3css et font-awesome -->
     <link rel="stylesheet" href="assets/css/w3css.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
+    
+    <!-- Icone pour navigateur -->
+    <link rel="icon" href="assets/img/416387_bird_eyes_night_owl_vision_icon.svg" type="image/svg+xml">
+    
+    <!-- Import AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto&display=swap');
+        @font-face {
+            font-family: 'Glorious';
+            src: url("assets/fonts/glorious_3/GLORIOUS.otf");
+        }
+
+        html, body {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        main {
+            height: 100%;
+            width: 100%;
+        }
+
         html {
             scroll-behavior: smooth;
         }
 
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
         section {
-            scroll-margin-top: 120px;
+            width: 100%;
+            height: 100%;
         }
 
-        #home {
-            margin-top: 50px;
-            height: 200px;
-            background-color: rgba(255, 255, 255, 0.479);
-
+        #home, #about {
+            height: 100vh;
+            color: white;
         }
 
-        #background {
+        .background {
             background-attachment: fixed;
             background-size: cover;
+        }
+
+        .piaf {
+            background-image: url('assets/img/photo2.jpg');
             background-position: center;
-            transition: 0.3s ease-in;
         }
 
-        .fleur1 {
-            background-image: url('assets/img/art-fleur1.jpg');
+        .piaf2 {
+            background-image: url('assets/img/photo5.jpg');
         }
 
-        .fleur2 {
-            background-image: url('assets/img/art-fleur2.jpg');
+        .hometitle {
+            padding: 20px;
+            font-family: 'Roboto'; 
+        
         }
 
-        .fleur3 {
-            background-image: url('assets/img/art-fleur3.jpg');
-        }
-
-        .cafe {
-            background-image: url('assets/img/coffee.jpg');
-
+        .homeframe {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(0deg, rgba(251, 252, 248, 0.5) 0%, rgba(251, 252, 248, 0.041) 100%, rgba(0, 213, 255, 0) 100%);
         }
 
         h1,
         h2 {
-            font-weight: 500;
             text-align: center;
+            font-family: 'Glorious';
+            font-weight: bold;
+            text-shadow: 2px 2px black;
+            color: white;
         }
 
-        header {
-            background-color: #fcae89;
+        h2 {
+            font-size: 55px;
+            margin-top: 100px;
         }
+
+        h1 {
+            font-size: 70px;
+        }
+
+        .callout {
+            background-color: #6a866b;
+        }
+
 
         #btnToTop {
             z-index: 5;
@@ -75,81 +117,107 @@
             bottom: 15px;
             right: 15px;
             border: 1px solid black;
-            background-color: rgba(255, 255, 255, 0.616);
+            background-color: rgba(255, 255, 255, 0.568);
             border-radius: 5px;
             padding: 10px;
         }
 
+        header {
+            background-color: #fbfcf8;
+        }
+
+        strong {
+            color: #e4e4b4;
+        }
+
+        button:hover {
+            background-color: #d5d5a9 !important;
+        }
     </style>
 </head>
 
 <body>
-    <div id="background" class="fleur1">
         <!-- HEADER START -->
         <header class="w3-top">
-            <nav id="desktopNav" class="w3-bar w3-border-bottom w3-border-black">
+            <nav id="desktopNav" class="w3-bar w3-display-container">
                 <a href="javascript:void(0)" onclick="toggleNavbar()"
-                    class="w3-button w3-bar-item w3-hide-medium w3-hide-large w3-right">
+                    class="w3-button w3-bar-item w3-hide-medium w3-hide-large w3-display-right w3-margin-right">
                     <i class="fa fa-bars"></i>
                 </a>
                 <a href="#home" class="w3-bar-item w3-button" onclick="hideNavbar()">
-                    <i class="fa fa-home"></i></a>
-                <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
-                <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
-                <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+                    <img src="assets/img/416387_bird_eyes_night_owl_vision_icon.svg" alt="Un logo chouette" width="55px"></i>
+                </a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-margin">About</a>
+                <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-margin-top w3-margin-bottom">Portfolio</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-margin">Contact</a>
             </nav>
 
             <nav id="mobileNav" class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
-                <a href="#about" class="w3-bar-item w3-button" onclick="toggleNavbar()">About</a>
-                <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleNavbar()">Portfolio</a>
-                <a href="#contact" class="w3-bar-item w3-button" onclick="toggleNavbar()">Contact</a>
+                <a href="#about" class="w3-bar-item w3-button w3-right-align" onclick="toggleNavbar()">About</a>
+                <a href="#portfolio" class="w3-bar-item w3-button w3-right-align" onclick="toggleNavbar()">Portfolio</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-right-align" onclick="toggleNavbar()">Contact</a>
             </nav>
         </header>
         <!-- HEADER END -->
 
         <!-- MAIN START -->
-        <main class="w3-justify w3-container">
+        <main class="w3-justify">
 
             <button id="btnToTop" class="w3-hide w3-animate-opacity">
                 <a href="#top"><i class="fa fa-arrow-up fa-2x"></i></a>
             </button>
 
             <!-- HOME SECTION START -->
-            <section id="home" class="w3-display-container w3-center w3-padding">
-                <h1 class="w3-display-middle w3-padding">WELCOME HOME</h1>
-            </section>
-
+            <div class="background piaf">
+                <section id="home" class="w3-display-container w3-padding homeframe">
+                        <div class="w3-display-middle w3-center hometitle">
+                            <h3 data-aos="fade-down" data-aos-duration="1500">Welcome to</h3>
+                            <h1 data-aos="fade-up" data-aos-duration="1500"><strong>O</strong>wlSight</h1>
+                            <h3 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1000">Nature photography</h3>
+                            <h3 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1300" data-aos-anchor-placement="bottom-bottom">Birdwatching sessions</h3>
+                        </div>
+                        <a href="#about" class="w3-button w3-display-bottommiddle w3-margin-bottom">
+                        <i class="fa fa-chevron-circle-down fa-4x"></i>
+                        </a>
+                </section>
+            </div>    
             <!-- ABOUT SECTION START -->
-            <h2 class="w3-padding">ABOUT ME</h2>
-
-            <section id="about" class="w3-display-container w3-center w3-padding">
-                <div class="w3-row">
-                    <div class="w3-half w3-padding">
-                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation"
-                            class="w3-image w3-card">
+            <div class="background piaf2">
+                <section id="about" class="w3-display-container w3-center w3-padding background">
+                    <h2 class="w3-padding">ab<strong>O</strong>ut me</h2>
+    
+                    <div class="w3-row">
+                        <div class="w3-half w3-padding">
+                            <img src="assets/img/photographer-gcc0859c11_1280.jpg" alt="Portrait d'un homme photographe" title="Photo de présentation"
+                                class="w3-image w3-card">
+                        </div>
+                        <div class="w3-half w3-card">
+                            <p class="w3-justify callout">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid
+                                quae? Quisquam ad saepe iure laboriosam excepturi doloribus unde voluptates consequuntur
+                                quam! Corporis veritatis quo cum vero nobis blanditiis autem? Dicta ut iste sit ab,
+                                dignissimos non cupiditate repellendus soluta optio repellat libero consequatur, commodi,
+                                ipsum ex iure ratione sunt eum. Facilis eum praesentium numquam incidunt repudiandae ut
+                                deserunt quos ipsam dolores voluptas culpa mollitia labore similique perferendis corporis
+                                molestiae perspiciatis aut nemo, reprehenderit vero non debitis voluptatum corrupti at!
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta voluptas magni
+                                consequatur ducimus sit corrupti sapiente quis assumenda, possimus, soluta eum unde totam!
+                                Quod cum inventore omnis debitis ullam modi esse reiciendis delectus illum.</p>
+                        </div>
+                        <a href="#portfolio" class="w3-button w3-display-bottommiddle w3-margin-bottom">
+                            <i class="fa fa-chevron-circle-down fa-4x"></i>
+                            </a>
+    
                     </div>
-                    <div class="w3-half w3-card">
-                        <p class="w3-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid
-                            quae? Quisquam ad saepe iure laboriosam excepturi doloribus unde voluptates consequuntur
-                            quam! Corporis veritatis quo cum vero nobis blanditiis autem? Dicta ut iste sit ab,
-                            dignissimos non cupiditate repellendus soluta optio repellat libero consequatur, commodi,
-                            ipsum ex iure ratione sunt eum. Facilis eum praesentium numquam incidunt repudiandae ut
-                            deserunt quos ipsam dolores voluptas culpa mollitia labore similique perferendis corporis
-                            molestiae perspiciatis aut nemo, reprehenderit vero non debitis voluptatum corrupti at!
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta voluptas magni
-                            consequatur ducimus sit corrupti sapiente quis assumenda, possimus, soluta eum unde totam!
-                            Quod cum inventore omnis debitis ullam modi esse reiciendis delectus illum.</p>
-                    </div>
-
-                </div>
-
-            </section>
+                </section>
+    
+            </div>
 
             <!-- PORTFOLIO SECTION START -->
-            <h2 class="w3-padding">PORTFOLIO</h2>
+            
             <section id="portfolio" class="w3-display-container w3-center w3-padding">
+                <h2 class="w3-padding">p<strong>O</strong>rtf<strong>O</strong>li<strong>O</strong></h2>
                 <p>Voici une série de photographies de qualité prises par mes soins.</p>
-                <div class="w3-padding w3-margin w3-white">
+                <div class="w3-padding w3-margin">
                     <div class="w3-row-padding">
                         <article class="w3-col m4 w3-center">
                             <img src="assets/img/photo1.jpg" alt="Photo des grasslands" title="Magnifique paysage"
@@ -202,8 +270,9 @@
             </section>
 
             <!-- CONTACT SECTION START -->
-            <h2 class="w3-padding">CONTACT ME</h2>
             <section id="contact" class="w3-display-container w3-center w3-padding">
+                <h2 class="w3-padding">c<strong>O</strong>ntact</h2>
+
                 <p>Vous avez une question, un projet, une commande ? Discutons-en.</p>
                 <form class="w3-card w3-white w3-padding">
                     <div>
@@ -237,13 +306,15 @@
 
         <!-- Footer Start -->
         <footer>
+            <!-- Réseaux sociaux, mentions légales -->
 
         </footer>
         <!-- Footer End -->
-    </div>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+          AOS.init();
+
         // Fonction pour afficher et masquer la barre de menu
         function toggleNavbar() {
             const nav = document.getElementById('mobileNav');
@@ -272,17 +343,19 @@
 
         function changeBackground() {
             const background = document.getElementById('background');
-            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-                background.classList.add("fleur3");
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                background.classList.add("fleur2");
                 console.log(body.classList);
             } else {
-                background.classList.remove("fleur3");
+                background.classList.remove("fleur2");
             }
         }
 
         window.addEventListener("scroll", function () {
             changeBackground();
         });
+
+
     </script>
 
 
