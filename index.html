@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Balises essentielles charset, name et title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile First Statique</title>
-    
+
     <!-- Balise meta description pour le référencement -->
     <meta name="description" content="Mobile first one page website project">
 
@@ -19,7 +20,6 @@
     <link rel="stylesheet" href="assets/css/w3css.css">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
     <style>
-
         html {
             scroll-behavior: smooth;
         }
@@ -32,7 +32,7 @@
             margin-top: 50px;
             height: 200px;
             background-color: rgba(255, 255, 255, 0.479);
-    
+
         }
 
         #background {
@@ -59,9 +59,10 @@
 
         }
 
-        h1, h2 {
+        h1,
+        h2 {
             font-weight: 500;
-            text-align: center;        
+            text-align: center;
         }
 
         header {
@@ -77,148 +78,171 @@
             background-color: rgba(255, 255, 255, 0.616);
             border-radius: 5px;
             padding: 10px;
-        }       
+        }
+
     </style>
 </head>
 
 <body>
     <div id="background" class="fleur1">
-        <!-- Début du Header -->
-    <header class="w3-top">
-        <nav id="desktopNav" class="w3-bar w3-border-bottom w3-border-black">
-            <a href="javascript:void(0)" onclick="toggleNavbar()" class="w3-button w3-bar-item w3-hide-medium w3-hide-large w3-right">
-                <i class="fa fa-bars"></i>
-            </a>    
-            <a href="#home" class="w3-bar-item w3-button" onclick="hideNavbar()">
-            <i class="fa fa-home"></i></a>
-            <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
-            <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
-        </nav>
+        <!-- HEADER START -->
+        <header class="w3-top">
+            <nav id="desktopNav" class="w3-bar w3-border-bottom w3-border-black">
+                <a href="javascript:void(0)" onclick="toggleNavbar()"
+                    class="w3-button w3-bar-item w3-hide-medium w3-hide-large w3-right">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#home" class="w3-bar-item w3-button" onclick="hideNavbar()">
+                    <i class="fa fa-home"></i></a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+                <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small">Portfolio</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+            </nav>
 
-        <nav id="mobileNav" class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
-            <a href="#about" class="w3-bar-item w3-button" onclick="toggleNavbar()">About</a>
-            <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleNavbar()">Portfolio</a>
-            <a href="#contact"  class="w3-bar-item w3-button" onclick="toggleNavbar()">Contact</a>
-        </nav>
-    </header>
-    <!-- Fin du Header -->
+            <nav id="mobileNav" class="w3-bar-block w3-white w3-hide-large w3-hide-medium w3-hide">
+                <a href="#about" class="w3-bar-item w3-button" onclick="toggleNavbar()">About</a>
+                <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleNavbar()">Portfolio</a>
+                <a href="#contact" class="w3-bar-item w3-button" onclick="toggleNavbar()">Contact</a>
+            </nav>
+        </header>
+        <!-- HEADER END -->
 
-    <!-- Début du main -->
-    <main class="w3-justify w3-container">
+        <!-- MAIN START -->
+        <main class="w3-justify w3-container">
 
-        <button id="btnToTop" class="w3-hide w3-animate-opacity">
-            <a href="#top"><i class="fa fa-arrow-up fa-2x"></i></a>    
-        </button>
+            <button id="btnToTop" class="w3-hide w3-animate-opacity">
+                <a href="#top"><i class="fa fa-arrow-up fa-2x"></i></a>
+            </button>
 
-        <!-- Début section home -->
-        <section id="home" class="w3-display-container w3-center w3-padding">
-            <h1 class="w3-display-middle w3-padding">WELCOME HOME</h1>
-        </section>
+            <!-- HOME SECTION START -->
+            <section id="home" class="w3-display-container w3-center w3-padding">
+                <h1 class="w3-display-middle w3-padding">WELCOME HOME</h1>
+            </section>
 
-        <!-- Début section about -->
-        <h2 class="w3-padding">ABOUT ME</h2>
+            <!-- ABOUT SECTION START -->
+            <h2 class="w3-padding">ABOUT ME</h2>
 
-        <section id="about" class="w3-display-container w3-center w3-padding">
-            <div class="w3-row">
-                <div class="w3-half w3-padding">
-                    <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card">
-                </div>
-                <div class="w3-half w3-card">
-                    <p class="w3-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid quae? Quisquam ad saepe iure laboriosam excepturi doloribus unde voluptates consequuntur quam! Corporis veritatis quo cum vero nobis blanditiis autem? Dicta ut iste sit ab, dignissimos non cupiditate repellendus soluta optio repellat libero consequatur, commodi, ipsum ex iure ratione sunt eum. Facilis eum praesentium numquam incidunt repudiandae ut deserunt quos ipsam dolores voluptas culpa mollitia labore similique perferendis corporis molestiae perspiciatis aut nemo, reprehenderit vero non debitis voluptatum corrupti at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta voluptas magni consequatur ducimus sit corrupti sapiente quis assumenda, possimus, soluta eum unde totam! Quod cum inventore omnis debitis ullam modi esse reiciendis delectus illum.</p>
-                </div>
+            <section id="about" class="w3-display-container w3-center w3-padding">
+                <div class="w3-row">
+                    <div class="w3-half w3-padding">
+                        <img src="assets/img/photo.jpg" alt="Photo de moi" title="Photo de présentation"
+                            class="w3-image w3-card">
+                    </div>
+                    <div class="w3-half w3-card">
+                        <p class="w3-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid
+                            quae? Quisquam ad saepe iure laboriosam excepturi doloribus unde voluptates consequuntur
+                            quam! Corporis veritatis quo cum vero nobis blanditiis autem? Dicta ut iste sit ab,
+                            dignissimos non cupiditate repellendus soluta optio repellat libero consequatur, commodi,
+                            ipsum ex iure ratione sunt eum. Facilis eum praesentium numquam incidunt repudiandae ut
+                            deserunt quos ipsam dolores voluptas culpa mollitia labore similique perferendis corporis
+                            molestiae perspiciatis aut nemo, reprehenderit vero non debitis voluptatum corrupti at!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dicta voluptas magni
+                            consequatur ducimus sit corrupti sapiente quis assumenda, possimus, soluta eum unde totam!
+                            Quod cum inventore omnis debitis ullam modi esse reiciendis delectus illum.</p>
+                    </div>
 
-            </div>
-
-        </section>
-
-        <!-- Début section portfolio -->
-        <h2 class="w3-padding">PORTFOLIO</h2>
-        <section id="portfolio" class="w3-display-container w3-center w3-padding">
-            <p>Voici une série de photographies de qualité prises par mes soins.</p>
-            <div class="w3-padding w3-margin w3-white">
-                <div class="w3-row-padding">
-                    <article class="w3-col m4 w3-center">
-                        <img src="assets/img/photo1.jpg" alt="Photo des grasslands" title="Magnifique paysage" class="w3-image w3-card w3-margin-bottom w3-margin-top">              
-                    </article>
-                    <article class="w3-col m4">
-                        <img src="assets/img/photo2.jpg" alt="Photo de surf" title="Belle photo surfer" class="w3-image w3-card w3-margin-bottom w3-margin-top">
-                    </article>
-                    <article class="w3-col m4">
-                        <img src="assets/img/photo3.jpg" alt="Photo de prairie" title="Magnifique prairie" class="w3-image w3-card w3-margin-bottom w3-margin-top">
-                    </article>
                 </div>
 
-                <div class="w3-row-padding">
-                    <article class="w3-col m4">
-                        <img src="assets/img/photo4.jpg" alt="Photo de chèvre" title="Photo de chèvre" class="w3-image w3-card w3-margin-bottom">              
-                    </article>
-                    <article class="w3-col m4">
-                        <img src="assets/img/photo5.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
-                    </article>
-                    <article class="w3-col m4">
-                        <img src="assets/img/photo6.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
-                    </article>
+            </section>
+
+            <!-- PORTFOLIO SECTION START -->
+            <h2 class="w3-padding">PORTFOLIO</h2>
+            <section id="portfolio" class="w3-display-container w3-center w3-padding">
+                <p>Voici une série de photographies de qualité prises par mes soins.</p>
+                <div class="w3-padding w3-margin w3-white">
+                    <div class="w3-row-padding">
+                        <article class="w3-col m4 w3-center">
+                            <img src="assets/img/photo1.jpg" alt="Photo des grasslands" title="Magnifique paysage"
+                                class="w3-image w3-card w3-margin-bottom w3-margin-top">
+                        </article>
+                        <article class="w3-col m4">
+                            <img src="assets/img/photo2.jpg" alt="Photo de surf" title="Belle photo surfer"
+                                class="w3-image w3-card w3-margin-bottom w3-margin-top">
+                        </article>
+                        <article class="w3-col m4">
+                            <img src="assets/img/photo3.jpg" alt="Photo de prairie" title="Magnifique prairie"
+                                class="w3-image w3-card w3-margin-bottom w3-margin-top">
+                        </article>
+                    </div>
+
+                    <div class="w3-row-padding">
+                        <article class="w3-col m4">
+                            <img src="assets/img/photo4.jpg" alt="Photo de chèvre" title="Photo de chèvre"
+                                class="w3-image w3-card w3-margin-bottom">
+                        </article>
+                        <article class="w3-col m4">
+                            <img src="assets/img/photo5.jpg" alt="Photo de moi" title="Photo de présentation"
+                                class="w3-image w3-card w3-margin-bottom">
+                        </article>
+                        <article class="w3-col m4">
+                            <img src="assets/img/photo6.jpg" alt="Photo de moi" title="Photo de présentation"
+                                class="w3-image w3-card w3-margin-bottom">
+                        </article>
+                    </div>
+
+                    <div class="w3-row-padding">
+                        <article class="w3-col m4">
+                            <img src="assets/img/photo7.jpg" alt="Photo de moi" title="Photo de présentation"
+                                class="w3-image w3-card w3-margin-bottom">
+                        </article>
+                        <article class="w3-col m4">
+                            <img src="assets/img/photo8.jpg" alt="Photo de moi" title="Photo de présentation"
+                                class="w3-image w3-card w3-margin-bottom">
+                        </article>
+                        <article class="w3-col m4">
+                            <img src="assets/img/photo9.jpg" alt="Photo de moi" title="Photo de présentation"
+                                class="w3-image w3-card w3-margin-bottom">
+                        </article>
+                    </div>
                 </div>
 
-                <div class="w3-row-padding">
-                    <article class="w3-col m4">
-                        <img src="assets/img/photo7.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">              
-                    </article>
-                    <article class="w3-col m4">
-                        <img src="assets/img/photo8.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
-                    </article>
-                    <article class="w3-col m4">
-                        <img src="assets/img/photo9.jpg" alt="Photo de moi" title="Photo de présentation" class="w3-image w3-card w3-margin-bottom">
-                    </article>
-                </div>
-            </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem dolores deserunt sed nemo velit
+                    repudiandae beatae aspernatur. Fugit eum architecto praesentium laborum omnis minus animi ab vel
+                    nisi adipisci?</p>
+            </section>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem dolores deserunt sed nemo velit repudiandae beatae aspernatur. Fugit eum architecto praesentium laborum omnis minus animi ab vel nisi adipisci?</p>
-        </section>
+            <!-- CONTACT SECTION START -->
+            <h2 class="w3-padding">CONTACT ME</h2>
+            <section id="contact" class="w3-display-container w3-center w3-padding">
+                <p>Vous avez une question, un projet, une commande ? Discutons-en.</p>
+                <form class="w3-card w3-white w3-padding">
+                    <div>
+                        <label for="surname">Nom :</label>
+                        <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="surname" id="surname">
+                    </div>
 
-        <!-- Début section Contact -->
-        <h2 class="w3-padding">CONTACT ME</h2>
-        <section id="contact" class="w3-display-container w3-center w3-padding">
-            <p>Vous avez une question, un projet, une commande ? Discutons-en.</p>
-            <form class="w3-card w3-white w3-padding">
-                <div>
-                    <label for="surname">Votre nom</label>
-                    <input type="text" name="surname" id="surname">
-                </div>
+                    <div>
+                        <label for="name">Prénom :</label>
+                        <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="name" id="name">
+                    </div>
 
-                <div>
-                    <label for="name">Votre prénom</label>
-                    <input type="text" name="name" id="name">
-                </div>
+                    <div>
+                        <label for="email">Adresse e-mail :</label>
+                        <input class="w3-input w3-light-gray w3-margin-bottom" type="email" name="email" id="email">
+                    </div>
 
-                <div>
-                    <label for="email">Votre adresse mail</label>
-                    <input type="email" name="email" id="email">
-                </div>
+                    <div>
+                        <label for="message">Votre message, en quelques phrases :</label>
+                        <textarea class="w3-input w3-light-gray" name="message" id="message"></textarea>
+                    </div>
 
-                <div>
-                    <label for="message">Votre message, en quelques phrases</label>
-                    <textarea name="message" id="message"></textarea>
-                </div>
+                    <div>
+                        <button class="w3-button w3-margin w3-light-gray">Envoyer</button>
+                    </div>
+                </form>
 
-                <div>
-                    <button class="w3-button">Envoyer</button>
-                </div>
-            </form>
+            </section>
+        </main>
+        <!-- Main End -->
 
-        </section>
-    </main>
-    <!-- Fin du Main -->
+        <!-- Footer Start -->
+        <footer>
 
-    <!-- Début du Footer -->
-    <footer>
-        
-    </footer>
-    <!-- Fin du Footer -->
+        </footer>
+        <!-- Footer End -->
     </div>
 
-    
+
     <script>
         // Fonction pour afficher et masquer la barre de menu
         function toggleNavbar() {
@@ -233,35 +257,36 @@
             }
         }
 
-        function displayScrollToTopBtn(){
+        function displayScrollToTopBtn() {
             const btn = document.getElementById("btnToTop");
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 btn.classList.add("w3-show");
             } else {
                 btn.classList.remove("w3-show");
             }
         }
 
-        window.addEventListener("scroll",function(){
+        window.addEventListener("scroll", function () {
             displayScrollToTopBtn();
         });
 
-        function changeBackground(){
+        function changeBackground() {
             const background = document.getElementById('background');
-            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700 ){
+            if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
                 background.classList.add("fleur3");
                 console.log(body.classList);
             } else {
                 background.classList.remove("fleur3");
             }
-        } 
+        }
 
-        window.addEventListener("scroll", function(){
+        window.addEventListener("scroll", function () {
             changeBackground();
         });
     </script>
-    
+
 
 
 </body>
+
 </html>
