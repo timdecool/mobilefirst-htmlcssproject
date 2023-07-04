@@ -40,7 +40,6 @@
         }
 
         main {
-            height: 100%;
             width: 100%;
         }
 
@@ -50,11 +49,21 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
+            background-color: #a7afa1;
         }
 
         #home {
-            height: 100vh;
             color: white;
+            height: 100vh;
+        }
+
+        #about, #contact {
+            background-color: #c4cebdf5
+        }
+
+
+        #portfolio {
+            background-color: #fbfcf8f3;
         }
 
         .background {
@@ -67,9 +76,6 @@
             background-position: center;
         }
 
-        .piaf2 {
-            background-image: url('assets/img/photo9.jpg');
-        }
 
         .hometitle {
             padding: 20px;
@@ -101,10 +107,9 @@
             font-size: 70px;
         }
 
-        .callout {
-            background-color: #e4e4b4;
+        .callout, header, footer {
+            background-color: #fbfcf8;
         }
-
 
         #btnToTop {
             z-index: 5;
@@ -115,12 +120,12 @@
             border: 0;
         }
 
-        header {
-            background-color: #fbfcf8;
-        }
-
         strong {
             color: #e4e4b4;
+        }
+
+        footer {
+            height: 100px;
         }
 
     </style>
@@ -151,37 +156,36 @@
         <!-- HEADER END -->
 
         <!-- MAIN START -->
-        <main class="w3-justify">
+        <main class="w3-justify background piaf">
 
             <button id="btnToTop" class="w3-hide w3-animate-opacity">
                 <a href="#top"><i class="fa fa-chevron-circle-up fa-4x"></i></a>
             </button>
 
             <!-- HOME SECTION START -->
-            <div class="background piaf">
                 <section id="home" class="w3-display-container w3-padding homeframe">
                         <div class="w3-display-middle w3-center hometitle">
                             <h3 data-aos="fade-down" data-aos-duration="1500">Welcome to</h3>
                             <h1 data-aos="fade-up" data-aos-duration="1500"><strong>O</strong>wlSight</h1>
                             <h3 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1000">Nature photography</h3>
-                            <h3 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1300" data-aos-anchor-placement="bottom-bottom">Birdwatching sessions</h3>
+                            <h3 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="1250" data-aos-anchor-placement="bottom-bottom">Birdwatching sessions</h3>
+                            <a href="#about" class="w3-button w3-margin-top">
+                                <i class="fa fa-chevron-circle-down fa-4x"></i>
+                            </a>    
                         </div>
-                        <a href="#about" class="w3-button w3-display-bottommiddle w3-margin-bottom">
-                        <i class="fa fa-chevron-circle-down fa-4x"></i>
-                        </a>
                 </section>
-            </div>    
             <!-- ABOUT SECTION START -->
-            <div class="background piaf2">
                 <section id="about" class="w3-display-container w3-center w3-padding background">
-                    <h2 class="w3-padding">ab<strong>O</strong>ut me</h2>
+                    <h2 class="w3-padding" data-aos="fade-in" data-aos-duration="1500">ab<strong>O</strong>ut me</h2>
     
-                    <div class="w3-row">
+                    <div class="w3-row w3-margin">
                         <div class="w3-half">
                             <img src="assets/img/photographer-gcc0859c11_1280.jpg" alt="Portrait d'un homme photographe" title="Photo de présentation"
                                 class="w3-image w3-card">
+                                <!-- data-aos="fade-left" data-aos-duration="1500" -->
                         </div>
-                        <div class="w3-half callout">
+                        <div class="w3-half callout w3-card">
+                            <!-- data-aos="fade-right" data-aos-duration="1500" -->
                             <p class="w3-justify w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid
                                 quae? Quisquam ad saepe iure laboriosam excepturi doloribus unde voluptates consequuntur
                                 quam! Corporis veritatis quo cum vero nobis blanditiis autem? Dicta ut iste sit ab,
@@ -194,16 +198,28 @@
                                 Quod cum inventore omnis debitis ullam modi esse reiciendis delectus illum.</p>
                         </div>
                     </div>
+                    <div class="w3-card w3-margin w3-padding w3-margin-top callout">
+                        <!-- data-aos="fade-up" data-aos-duration="1500" -->
+                        <h3>What do I do ?</h3>
+                    <p class="w3-justify w3-padding">
+                        <ul class="w3-ul">
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum.</li>
+                        </ul>
+                    </p>
+                    </div>
                 </section>
-    
-            </div>
 
             <!-- PORTFOLIO SECTION START -->
             
             <section id="portfolio" class="w3-display-container w3-center w3-padding">
                 <h2 class="w3-padding">p<strong>O</strong>rtf<strong>O</strong>li<strong>O</strong></h2>
-                <p>Voici une série de photographies de qualité prises par mes soins.</p>
-                <div class="w3-padding w3-margin">
+
+                <div class="w3-margin">
+                    <p class="w3-justify w3-container w3-padding w3-margin">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem dolores deserunt sed nemo velit
+                        repudiandae beatae aspernatur. Fugit eum architecto praesentium laborum omnis minus animi ab vel
+                        nisi adipisci?</p>
                     <div class="w3-row-padding">
                         <article class="w3-col m4 w3-center">
                             <img src="assets/img/photo1.jpg" alt="Photo des grasslands" title="Magnifique paysage"
@@ -250,51 +266,68 @@
                     </div>
                 </div>
 
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem dolores deserunt sed nemo velit
-                    repudiandae beatae aspernatur. Fugit eum architecto praesentium laborum omnis minus animi ab vel
-                    nisi adipisci?</p>
             </section>
 
             <!-- CONTACT SECTION START -->
             <section id="contact" class="w3-display-container w3-center w3-padding">
                 <h2 class="w3-padding">c<strong>O</strong>ntact</h2>
 
-                <p>Any project or question? Let's discuss it.</p>
-                <form class="w3-card w3-white w3-padding">
-                    <div>
-                        <label for="surname">Name:</label>
-                        <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="surname" id="surname">
+                <div class="w3-row w3-margin">
+                    <div class="w3-half">
+                        <form class="w3-card w3-white w3-padding">
+                            <h3>Any project or question? Let's discuss it.</h3>
+                            
+                            <div class="w3-margin-left w3-margin-right w3-padding">
+                                <label for="surname">Name:</label>
+                                <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="surname" id="surname">
+                            </div>
+        
+                            <div class="w3-margin-left w3-margin-right w3-padding">
+                                <label for="name">Surname:</label>
+                                <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="name" id="name">
+                            </div>
+        
+                            <div class="w3-margin-left w3-margin-right w3-padding">
+                                <label for="email">E-mail adress:</label>
+                                <input class="w3-input w3-light-gray w3-margin-bottom" type="email" name="email" id="email">
+                            </div>
+        
+                            <div class="w3-margin-left w3-margin-right w3-padding">
+                                <label for="message">Your message in a few words or sentences:</label>
+                                <textarea class="w3-input w3-light-gray" name="message" id="message"></textarea>
+                            </div>
+        
+                            <div>
+                                <button class="w3-button w3-margin w3-light-gray">Send</button>
+                            </div>
+                        </form>
                     </div>
+                    <div class="w3-half">
+                        <img src="assets/img/photo8.jpg" alt="Photo de moi" title="Photo de présentation"
+                        class="w3-image w3-card">
+                    </div>
+                </div>
 
-                    <div>
-                        <label for="name">Surname:</label>
-                        <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="name" id="name">
-                    </div>
-
-                    <div>
-                        <label for="email">E-mail adress:</label>
-                        <input class="w3-input w3-light-gray w3-margin-bottom" type="email" name="email" id="email">
-                    </div>
-
-                    <div>
-                        <label for="message">Your message in a few words or sentences:</label>
-                        <textarea class="w3-input w3-light-gray" name="message" id="message"></textarea>
-                    </div>
-
-                    <div>
-                        <button class="w3-button w3-margin w3-light-gray">Send</button>
-                    </div>
-                </form>
+                
 
             </section>
         </main>
         <!-- Main End -->
 
         <!-- Footer Start -->
-        <footer>
-            <!-- Réseaux sociaux, mentions légales -->
+<footer class="w3-display-container">
+    <div class="">
+        <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fa fa-pinterest fa-2x"></i></a>
+    </div>
 
-        </footer>
+    <div>
+        <a href="#">Mentions légales</a>
+    </div>
+
+</footer>
         <!-- Footer End -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -344,8 +377,5 @@
 
     </script>
 
-
-
 </body>
-
 </html>
