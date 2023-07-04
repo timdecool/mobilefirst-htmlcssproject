@@ -75,6 +75,21 @@
             background-position: center;
         }
 
+        .piaf2 {
+            background-image: url('assets/img/photo10.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .contacthalf {
+            height: 600px;
+        }
+
+        .contactform {
+            width: 90%;
+        }
+
+
         .hometitle {
             padding: 20px;
             font-family: 'Roboto'; 
@@ -271,37 +286,40 @@
 
                 <div class="w3-row w3-margin">
                     <div class="w3-half">
-                        <form class="w3-card w3-padding callout" data-aos="fade-up" data-aos-duration="1500" >
-                            <h3>Any project or question? Let's discuss it.</h3>
+                        <form class="w3-card callout contacthalf w3-display-container w3-padding" data-aos="fade-up" data-aos-duration="1500" >
+                            <div class="w3-display-middle contactform">
+                                <h3 class="w3-margin-bottom">Any project or question? Let's discuss it.</h3>
                             
-                            <div class="w3-margin-left w3-margin-right w3-padding">
-                                <label for="surname">Name:</label>
-                                <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="surname" id="surname">
-                            </div>
-        
-                            <div class="w3-margin-left w3-margin-right w3-padding">
-                                <label for="name">Surname:</label>
-                                <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="name" id="name">
-                            </div>
-        
-                            <div class="w3-margin-left w3-margin-right w3-padding">
-                                <label for="email">E-mail adress:</label>
-                                <input class="w3-input w3-light-gray w3-margin-bottom" type="email" name="email" id="email">
-                            </div>
-        
-                            <div class="w3-margin-left w3-margin-right w3-padding">
-                                <label for="message">Your message in a few words or sentences:</label>
-                                <textarea class="w3-input w3-light-gray" name="message" id="message"></textarea>
-                            </div>
-        
-                            <div>
-                                <button class="w3-button w3-margin w3-light-gray">Send</button>
+                                <div class="w3-margin-top">
+                                    <label for="surname">Name:</label>
+                                    <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="surname" id="surname">
+                                </div>
+            
+                                <div>
+                                    <label for="name">Surname:</label>
+                                    <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="name" id="name">
+                                </div>
+            
+                                <div>
+                                    <label for="email">E-mail adress:</label>
+                                    <input class="w3-input w3-light-gray w3-margin-bottom" type="email" name="email" id="email">
+                                </div>
+            
+                                <div>
+                                    <label for="message">Your message in a few words or sentences:</label>
+                                    <textarea class="w3-input w3-light-gray" name="message" id="message"></textarea>
+                                </div>
+            
+                                <div>
+                                    <button class="w3-button w3-margin w3-light-gray">Send</button>
+                                </div>
+    
                             </div>
                         </form>
                     </div>
-                    <div class="w3-half">
-                        <img src="assets/img/photo8.jpg" alt="Photo de moi" title="Photo de présentation"
-                        class="w3-image w3-card" data-aos="fade-up" data-aos-duration="1500" >
+                    <div class="w3-half piaf2 contacthalf" data-aos="fade-up" data-aos-duration="1500" >
+                        <!-- <img src="assets/img/photo10.jpg" alt="Photo d'oiseau sympa" title="Photo d'oiseau sympa"
+                            class="w3-image w3-card w3-margin-bottom" data-aos="fade-in" data-aos-duration="1500" > -->
                     </div>
                 </div>
 
