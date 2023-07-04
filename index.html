@@ -52,12 +52,7 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-        section {
-            width: 100%;
-            height: 100%;
-        }
-
-        #home, #about {
+        #home {
             height: 100vh;
             color: white;
         }
@@ -73,7 +68,7 @@
         }
 
         .piaf2 {
-            background-image: url('assets/img/photo5.jpg');
+            background-image: url('assets/img/photo9.jpg');
         }
 
         .hometitle {
@@ -107,7 +102,7 @@
         }
 
         .callout {
-            background-color: #6a866b;
+            background-color: #e4e4b4;
         }
 
 
@@ -116,10 +111,8 @@
             position: fixed;
             bottom: 15px;
             right: 15px;
-            border: 1px solid black;
-            background-color: rgba(255, 255, 255, 0.568);
-            border-radius: 5px;
-            padding: 10px;
+            background-color: rgba(251, 252, 248, 0);
+            border: 0;
         }
 
         header {
@@ -130,9 +123,6 @@
             color: #e4e4b4;
         }
 
-        button:hover {
-            background-color: #d5d5a9 !important;
-        }
     </style>
 </head>
 
@@ -164,7 +154,7 @@
         <main class="w3-justify">
 
             <button id="btnToTop" class="w3-hide w3-animate-opacity">
-                <a href="#top"><i class="fa fa-arrow-up fa-2x"></i></a>
+                <a href="#top"><i class="fa fa-chevron-circle-up fa-4x"></i></a>
             </button>
 
             <!-- HOME SECTION START -->
@@ -187,12 +177,12 @@
                     <h2 class="w3-padding">ab<strong>O</strong>ut me</h2>
     
                     <div class="w3-row">
-                        <div class="w3-half w3-padding">
+                        <div class="w3-half">
                             <img src="assets/img/photographer-gcc0859c11_1280.jpg" alt="Portrait d'un homme photographe" title="Photo de présentation"
                                 class="w3-image w3-card">
                         </div>
-                        <div class="w3-half w3-card">
-                            <p class="w3-justify callout">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid
+                        <div class="w3-half callout">
+                            <p class="w3-justify w3-padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, aliquid
                                 quae? Quisquam ad saepe iure laboriosam excepturi doloribus unde voluptates consequuntur
                                 quam! Corporis veritatis quo cum vero nobis blanditiis autem? Dicta ut iste sit ab,
                                 dignissimos non cupiditate repellendus soluta optio repellat libero consequatur, commodi,
@@ -203,10 +193,6 @@
                                 consequatur ducimus sit corrupti sapiente quis assumenda, possimus, soluta eum unde totam!
                                 Quod cum inventore omnis debitis ullam modi esse reiciendis delectus illum.</p>
                         </div>
-                        <a href="#portfolio" class="w3-button w3-display-bottommiddle w3-margin-bottom">
-                            <i class="fa fa-chevron-circle-down fa-4x"></i>
-                            </a>
-    
                     </div>
                 </section>
     
@@ -273,30 +259,30 @@
             <section id="contact" class="w3-display-container w3-center w3-padding">
                 <h2 class="w3-padding">c<strong>O</strong>ntact</h2>
 
-                <p>Vous avez une question, un projet, une commande ? Discutons-en.</p>
+                <p>Any project or question? Let's discuss it.</p>
                 <form class="w3-card w3-white w3-padding">
                     <div>
-                        <label for="surname">Nom :</label>
+                        <label for="surname">Name:</label>
                         <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="surname" id="surname">
                     </div>
 
                     <div>
-                        <label for="name">Prénom :</label>
+                        <label for="name">Surname:</label>
                         <input class="w3-input w3-light-gray w3-margin-bottom" type="text" name="name" id="name">
                     </div>
 
                     <div>
-                        <label for="email">Adresse e-mail :</label>
+                        <label for="email">E-mail adress:</label>
                         <input class="w3-input w3-light-gray w3-margin-bottom" type="email" name="email" id="email">
                     </div>
 
                     <div>
-                        <label for="message">Votre message, en quelques phrases :</label>
+                        <label for="message">Your message in a few words or sentences:</label>
                         <textarea class="w3-input w3-light-gray" name="message" id="message"></textarea>
                     </div>
 
                     <div>
-                        <button class="w3-button w3-margin w3-light-gray">Envoyer</button>
+                        <button class="w3-button w3-margin w3-light-gray">Send</button>
                     </div>
                 </form>
 
