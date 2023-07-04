@@ -49,7 +49,6 @@
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #a7afa1;
         }
 
         #home {
@@ -58,12 +57,12 @@
         }
 
         #about, #contact {
-            background-color: #c4cebdf5
+            background-color:  rgba(122,147,123,0.9);
         }
 
 
-        #portfolio, .fondblanc {
-            background-color: #fbfcf8f3;
+        #portfolio {
+            background-color: #fbfcf8fa;
         }
 
         .background {
@@ -76,17 +75,16 @@
             background-position: center;
         }
 
-
         .hometitle {
             padding: 20px;
             font-family: 'Roboto'; 
-        
         }
 
         .homeframe {
             height: 100%;
             width: 100%;
-            background: linear-gradient(0deg, rgba(251, 252, 248, 0.5) 0%, rgba(251, 252, 248, 0.041) 100%, rgba(0, 213, 255, 0) 100%);
+            background: rgb(251,252,248);
+            background: linear-gradient(180deg, rgba(251,252,248,0) 6%, rgba(251,252,248,0) 30%, rgba(122,147,123,0.5159313725490196) 50%, rgba(122,147,123,0.726015406162465) 70%, rgba(122,147,123,0.9) 98%);    
         }
 
         h1,
@@ -216,50 +214,50 @@
                 <h2 class="w3-padding" data-aos="fade-in" data-aos-duration="1500">p<strong>O</strong>rtf<strong>O</strong>li<strong>O</strong></h2>
 
                 <div class="w3-margin">
-                    <p class="w3-justify w3-container w3-padding w3-margin" data-aos="fade-in" data-aos-duration="1500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem dolores deserunt sed nemo velit
+                    <p class="w3-justify w3-container w3-padding w3-margin w3-card  callout" data-aos="fade-in" data-aos-duration="1500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo dolorem dolores deserunt sed nemo velit
                         repudiandae beatae aspernatur. Fugit eum architecto praesentium laborum omnis minus animi ab vel
                         nisi adipisci?</p>
                     <div class="w3-row-padding">
                         <article class="w3-col m4 w3-center">
-                            <img src="assets/img/photo1.jpg" alt="Photo des grasslands" title="Magnifique paysage"
+                            <img src="assets/img/photo1.jpg" alt="Photo d'oiseau sympa" title="Photo d'oiseau sympa"
                                 class="w3-image w3-card w3-margin-bottom w3-margin-top" data-aos="fade-in" data-aos-duration="1500">
                         </article>
                         <article class="w3-col m4">
-                            <img src="assets/img/photo2.jpg" alt="Photo de surf" title="Belle photo surfer"
+                            <img src="assets/img/photo2.jpg" alt="Photo d'oiseau sympa" title="Photo d'oiseau sympa"
                                 class="w3-image w3-card w3-margin-bottom w3-margin-top" data-aos="fade-in" data-aos-duration="1500">
                         </article>
                         <article class="w3-col m4">
-                            <img src="assets/img/photo3.jpg" alt="Photo de prairie" title="Magnifique prairie"
+                            <img src="assets/img/photo3.jpg" alt="Photo de libellule" title="Photo de libellule"
                                 class="w3-image w3-card w3-margin-bottom w3-margin-top" data-aos="fade-in" data-aos-duration="1500">
                         </article>
                     </div>
 
                     <div class="w3-row-padding">
                         <article class="w3-col m4">
-                            <img src="assets/img/photo4.jpg" alt="Photo de chèvre" title="Photo de chèvre"
+                            <img src="assets/img/photo4.jpg" alt="Photo d'insecte sur une fleur" title="Photo d'insecte"
                                 class="w3-image w3-card w3-margin-bottom" data-aos="fade-in" data-aos-duration="1500">
                         </article>
                         <article class="w3-col m4">
-                            <img src="assets/img/photo5.jpg" alt="Photo de moi" title="Photo de présentation"
+                            <img src="assets/img/photo5.jpg" alt="Photo d'oiseau sympa" title="Photo d'oiseau sympa"
                                 class="w3-image w3-card w3-margin-bottom" data-aos="fade-in" data-aos-duration="1500">
                         </article>
                         <article class="w3-col m4">
-                            <img src="assets/img/photo6.jpg" alt="Photo de moi" title="Photo de présentation"
+                            <img src="assets/img/photo6.jpg" alt="Photo d'oiseau sympa" title="Photo d'oiseau sympa"
                                 class="w3-image w3-card w3-margin-bottom" data-aos="fade-in" data-aos-duration="1500">
                         </article>
                     </div>
 
                     <div class="w3-row-padding">
                         <article class="w3-col m4">
-                            <img src="assets/img/photo7.jpg" alt="Photo de moi" title="Photo de présentation"
+                            <img src="assets/img/photo7.jpg" alt="Photo d'oiseau sympa" title="Photo d'oiseau sympa"
                                 class="w3-image w3-card w3-margin-bottom" data-aos="fade-in" data-aos-duration="1500">
                         </article>
                         <article class="w3-col m4">
-                            <img src="assets/img/photo8.jpg" alt="Photo de moi" title="Photo de présentation"
+                            <img src="assets/img/photo8.jpg" alt="Photo d'oiseau sympa" title="Photo d'oiseau sympa"
                                 class="w3-image w3-card w3-margin-bottom" data-aos="fade-in" data-aos-duration="1500">
                         </article>
                         <article class="w3-col m4">
-                            <img src="assets/img/photo9.jpg" alt="Photo de moi" title="Photo de présentation"
+                            <img src="assets/img/photo9.jpg" alt="Photo d'oiseau sympa" title="Photo d'oiseau sympa"
                                 class="w3-image w3-card w3-margin-bottom" data-aos="fade-in" data-aos-duration="1500" >
                         </article>
                     </div>
@@ -378,22 +376,6 @@
         window.addEventListener("scroll", function () {
             displayScrollToTopBtn();
         });
-
-        function changeBackground() {
-            const background = document.getElementById('background');
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                background.classList.add("fleur2");
-                console.log(body.classList);
-            } else {
-                background.classList.remove("fleur2");
-            }
-        }
-
-        window.addEventListener("scroll", function () {
-            changeBackground();
-        });
-
-
     </script>
 
 </body>
